@@ -248,7 +248,7 @@ CSS 3
 
             4. Id
                     if a style swhould be applied to an elemnt hving 
-                    a specific id, then id selector is sued.
+                    a specific id, then id selector is used.
 
                     #id{
                         css-property:value;
