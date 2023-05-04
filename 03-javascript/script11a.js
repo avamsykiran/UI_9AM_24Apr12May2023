@@ -33,14 +33,25 @@ let items = [
     new Item(10,"Note Pad",4456,244)
 ];
 
-//print the costlest itme
+//print the costlest item
+console.log(items.reduce( (a,b) => a.price>b.price?a:b ));
 
 //print the cheapest item
+console.log(items.reduce( (a,b) => a.price<b.price?a:b ));
 
 //print list of all the item that are less than 500 in stock
+console.log(items.filter( item => item.stock<=500 ));
 
 //print list of all item names
+console.log( items.map( item => item.name ));
 
 //print list of all the items whose price ranges from 500 to 2000
+console.log(items.filter(item => item.price>=500 && item.price<=2000));
 
 //print all the items after increasing their stock by 50%
+items.forEach( item => item.stock=item.stock+items.stock/2 );
+console.log(items);
+
+//print the list of those items whose price is not more than a 100.
+console.log(items.filter( item => item.parice<=100 ));
+
