@@ -23,3 +23,5 @@ class NumberSeries {
 
 (new NumberSeries(10,20)).generateSeries();
 (new NumberSeries(110,120)).generateSeries();
+
+console.log("Main executor");

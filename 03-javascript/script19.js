@@ -56,5 +56,12 @@ let pickPrimes = async (...nums) => {
     return noOfPrimes;
 }
 
-pickPrimes(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-.then(priemsCount => console.log(`${priemsCount} primes found`));
+let p1 = pickPrimes(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+p1.then(priemsCount => console.log(`${priemsCount} primes found in first group`))
+    .catch( err => console.log(err));
+
+let p2 = pickPrimes(111,333,777);
+
+p2.then(priemsCount => console.log(`${priemsCount} primes found in second group`))
+    .catch( err => console.log(err));

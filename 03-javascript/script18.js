@@ -34,12 +34,8 @@ class NumberSeries {
 let p1 = (new NumberSeries(10)).generateRandomNumbers();
 let p2 = (new NumberSeries(-5)).generateRandomNumbers();
 
-p1.then(
-    s => console.log(`Total Sum is ${s}`),
-    err => console.log(err)
-);
+p1.then( s => console.log(`Total Sum is ${s}`) )
+    .catch( err => console.log(err) );
 
-p2.then(
-    s => console.log(`Total Sum is ${s}`),
-    err => console.log(err)
-);
+p2.then( s => console.log(`Total Sum is ${s}`) )
+    .catch( err => console.log(err) );
