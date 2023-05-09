@@ -692,3 +692,16 @@ JavaScript (ES6)
         npm install dependency-name --save      //installs the dependency and records in package.json
         npm install dependency-name --dev-save  //installs the dependency and records in package.json as 
                                                 //development time dependency
+
+    Assignment
+    ------------------------------------------------
+       
+        //populate the below array with 10 records:
+
+        let cars = [
+            {id:1,make:"TATA",model:"NANO ",onRoad:"2.5 Lakhs"} 
+        ]
+
+        //an html page which displays the list of cars in the form of a table
+        //and provide options to add and delete.
+
