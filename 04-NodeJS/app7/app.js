@@ -8,7 +8,7 @@ const reqHandler = (req,resp) => {
     const query = new url.URLSearchParams(reqUrl.search);
 
     console.log(JSON.stringify(reqUrl));
-
+ 
     resp.write("<html><body>");
     resp.write(`<h3>${req.method}</h3>`)
     resp.write(`<h3>${reqUrl.href}</h3>`)
