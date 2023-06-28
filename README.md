@@ -51,7 +51,7 @@ HTML - Hyper Text Mark Up Language
         date, mail,
         address,phone   inline group element
 
-    Lists and Tables
+    Lists
         ul          unordered lists
             type        circle/dot/square
         ol          ordered lists
@@ -190,6 +190,11 @@ CSS 3
         + CSS offers common uniform properties unlike html
         + CSS can provide styling across grouped elements.
         + CSS can isolate styling from content. It adds to maintainability.
+
+        Mode Of CSS
+            Inline Style Sheets
+            Embeded Styl;e Sheets
+            External Style Sheets
         
         Inline Style Sheet
 
@@ -213,13 +218,25 @@ CSS 3
                 </style>
             </head>
 
-            selector is a string that qualfies the elements to be applied with the style.
+        External Style Sheet
+
+            style is defiend in a seperate file with extension .css
+            and that cna be linked to any number of html pages using
+                
+                <link href="fileName.css" rel="stylesheet" />
+
+        
+        Selector is a string that qualfies the elements to be applied with the style.
 
             1. Tag Name
                     each tag name itself is a selector.
                     
                     tagName{
-                        css-property:value;
+                        css-property:value; 
+                    }
+
+                    p{
+                        text-align:center;
                     }
 
             2. Attribute
@@ -231,6 +248,14 @@ CSS 3
                     
                     [attributeName=""]{
                         css-property:value;
+                    }
+
+                    [src] {
+                        width:50%;
+                    }
+
+                    [type="number"] {
+                        text-align:right;
                     }
 
             3. Class
@@ -246,6 +271,21 @@ CSS 3
                     <tagName class="className">
                     </tagName>
 
+                    .important {
+                        background-color:#00000;
+                        color:#ffffff;
+                    }
+
+                    .highlight{
+                        border:1px solid white;
+                    }
+
+                    <p class="important"></p>
+
+                    <h3 class="important highlight"></h3>
+
+                    <tr class="important"></tr>
+
             4. Id
                     if a style swhould be applied to an elemnt hving 
                     a specific id, then id selector is used.
@@ -255,14 +295,6 @@ CSS 3
                     }
 
             5. Psuedo
-
-
-        External Style Sheet
-
-            style is defiend in a seperate file with extension .css
-            and that cna be linked to any number of html pages using
-                
-                <link href="fileName.css" rel="stylesheet" />
 
 
     CSS - unit of measure
@@ -327,7 +359,7 @@ CSS 3
 
         display             inline/block/inline-block
 
-        position            relative / absolute
+        position           relative / absolute
 
         top
         left
@@ -383,7 +415,6 @@ CSS 3
         list-style-image:		url('imgs/note.png')
         marker-offset
         
-  
     controlling scroll bars
     ------------------------------------
         
@@ -415,6 +446,7 @@ CSS 3
         [s1^='v1']		 s1 attrib value starts with the word v1
         [s1$='v1']		 s1 attrib value ends with the word v1
 
+       
         Psuedo selectors
         ----------------------------------------------------------------------------
         input:enabled	Selects every enabled <input> element
@@ -669,39 +701,4 @@ JavaScript (ES6)
                 getElementById(id)
                 getElementsByName(name)
                 querySelector("css-selector")
-
-    ES Modules
-    -------------------------------------
-
-        requirejs modules
-        commonjs modules
-
-        esm - ecma script modules
-         a module is a single js file.
-         export 
-         import
-
-    NodeJS project
-    -----------------------------
-        npm init -y     //to initilize the current folder into a node project.
-
-        package.json    //is the build config file like pom.xml in mavne/build.gradle in gralde
-
-        npm install     //used to install all the dependencies listed in package.json
-
-        npm install dependency-name --save      //installs the dependency and records in package.json
-        npm install dependency-name --dev-save  //installs the dependency and records in package.json as 
-                                                //development time dependency
-
-    Assignment
-    ------------------------------------------------
-       
-        //populate the below array with 10 records:
-
-        let cars = [
-            {id:1,make:"TATA",model:"NANO ",onRoad:"2.5 Lakhs"} 
-        ]
-
-        //an html page which displays the list of cars in the form of a table
-        //and provide options to add and delete.
 

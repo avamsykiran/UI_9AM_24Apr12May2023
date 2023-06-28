@@ -4,7 +4,7 @@ let s = "Hello World";
 console.log(s.length)
 console.log(s.toUpperCase())
 console.log(s.toLowerCase())
-console.log(s.substring(2,7))//gives 2nd to 7th character
+console.log(s.substring(2,7)) //gives 2nd to 7th character
 
 console.log(Math.pow(2,5))
 console.log(Math.log(2))

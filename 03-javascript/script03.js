@@ -1,6 +1,6 @@
 
 function myFunction(){
-    a = 45;
+    a = 45; //hoisting
     var b = 46;
     console.log(a);
     console.log(b);

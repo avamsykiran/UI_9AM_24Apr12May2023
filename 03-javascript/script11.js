@@ -34,7 +34,7 @@ let emps = [
 
 console.log(emps);
 
-emps.pop(); //remove the last inserted element.
+emps.pop(); //removes the last inserted element.
 console.log(emps);
 
 emps.splice(4,2);//removes the 4th and 5th elements
@@ -43,7 +43,7 @@ console.log(emps);
 emps.push(new Emp(getNextId(),"Koaml",78900));
 console.log(emps);
 
-emps.sort((e1,e2) => e1.sal>e2.sal?1:(e1.sal<e2.sal?-1:0));
+emps.sort( (e1,e2) => e1.sal>e2.sal?1:(e1.sal<e2.sal?-1:0) );
 console.log(emps);
 
 console.log(emps.find(e => e.sal===2345));
@@ -52,7 +52,7 @@ console.log(emps.find(e => e.sal===45));
 console.log(emps.findIndex(e => e.sal===2345));
 console.log(emps.findIndex(e => e.sal===45));
 
-emps.forEach(e => e.sal=e.sal+(e.sal*0.05));
+emps.forEach( e => e.sal=e.sal+(e.sal*0.05) );
 console.log(emps);
 
 let names = emps.map(e => e.name);

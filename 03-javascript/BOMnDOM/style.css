@@ -2,20 +2,12 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
 }
 
-#content,#cart{
-    margin:0.25%;
-    display: inline-flex;
-}
-
 #content{
-    width:55%;
+    margin:auto;
+    width:60%;
 }
 
-#cart{
-    width:25%;
-}
-
-#content>table,#cart>table{
+#content>table{
     width: 90%;
     margin:auto;
     border:0.5px solid black;

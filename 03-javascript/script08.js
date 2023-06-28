@@ -1,8 +1,7 @@
 //Objects Literals (JSON)
 
-let emp1 = {id:101,name:"Vamsy",sal:45600,ta : () => (this.sal*0.2)};
+let emp1 = {id:101,name:"Vamsy",sal:45600};
 console.log(emp1);
-console.log(emp1.ta());
 
 //constructor functions: a function that accepts proeprties and assigns them onto 'this'
 

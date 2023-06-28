@@ -19,7 +19,7 @@
             clearInterval(handle);
             resolve(count);
         }
-    },500);
+    },1);
 } )*/
 
 let countFactors = async n => {
@@ -35,7 +35,7 @@ let countFactors = async n => {
             count++;
         }
     }
-    return count;
+    return count; 
 }
 
 let pickPrimes = async (...nums) => {
